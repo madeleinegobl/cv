@@ -15,11 +15,12 @@ body {
 ul {
     padding-left: 2ch;
 }
+
 :is(h1, h2, h3, h4, h5, h6):has(+hr) {
     margin-bottom: 0;
 }
 
-hr+ :is(h1, h2, h3, h4, h5, h6) {
+hr+:is(h1, h2, h3, h4, h5, h6) {
     margin-top: 0.25em;
     margin-bottom: 0.5em;
 }
@@ -28,6 +29,22 @@ picture,
 img {
     display: block;
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    --color: rgb(10, 110, 70);
+    color: var(--color);
+
+    &:visited {
+        color: var(--color);
+    }
+
+    &:hover {
+        color: blue;
+        color: color-mix(in oklab, white 40%, var(--color));
+        text-decoration: underline;
+    }
 }
 
 /* utility */
@@ -180,10 +197,6 @@ img {
     body {
         font-size: 0.8rem;
         --line-height: 1.5;
-    }
-
-    .header-picture {
-        /* --size: 9em; */
     }
 
     p {
