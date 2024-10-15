@@ -10,7 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <title>Document</title>
+    <script src="./js/index.js"></script>
+    <title>Elias Eriksson CV</title>
 </head>
 
 <body>
@@ -19,33 +20,33 @@
             <header class="page-header">
                 <div class="header-info">
                     <h1>Elias Eriksson</h1>
-                    <ul class="contact-information">
-                        <li class="contact">
+                    <ul class="contact-information tags">
+                        <li class="contact tag">
                             <picture>
                                 <img src="./media/icons/linkedin.svg" alt="Linkedin logotype">
                             </picture>
                             <a
                                 href="https://www.linkedin.com/in/Elias-Eriksson-82a926190/">/Elias-Eriksson-82a926190/</a>
                         </li>
-                        <li class="contact">
+                        <li class="contact tag">
                             <picture>
                                 <img src="./media/icons/github.svg" alt="Github logotype">
                             </picture>
                             <a href="https://github.com/eliaseriksson/">/EliasEriksson/</a>
                         </li>
-                        <li class="contact">
+                        <li class="contact tag">
                             <picture>
                                 <img src="./media/icons/at.svg" alt="At sign icon">
                             </picture>
                             <a href="mailto:EliasEriksson95@gmail.com">EliasEriksson95@gmail.com</a>
                         </li>
-                        <li class="contact">
+                        <li class="contact tag">
                             <picture>
                                 <img src="./media/icons/phone.svg" alt="Phone icon">
                             </picture>
                             <a href="tel:+46702879446">+46 70 28 79 446</a>
                         </li>
-                        <li class="contact">
+                        <li class="contact tag">
                             <picture>
                                 <img src="./media/icons/mail.svg" alt="Mail icon">
                             </picture>
@@ -56,12 +57,12 @@
                 <div class="header-picture">
                     <picture>
                         <img src="./media/photos/me.jpg"
-                            alt="Portrait picture of Elias Eriksson wearing a green sweater" />
+                            alt="Portrait picture of Elias Eriksson wearing a green sweater">
                     </picture>
                 </div>
             </header>
-            <main>
-                <section>
+            <main class="page-content">
+                <section class="section">
                     <h2>Kort om mig</h2>
                     <hr>
                     <p>För mig har programmering har gått från en fritidssyssla till en karriär som jag brinner för.
@@ -71,15 +72,132 @@
                         hemsidor. Mina projekt sporrade mig sedan till att söka ett webbutvecklingsprogram på
                         universitetsnivå och nu jobbar jag heltid med min passion.</p>
                 </section>
-                <section>
+                <section class="section">
                     <h2>Utbildning</h2>
                     <hr>
-                    
+                    <h3>Webbutveckling Mittuniversitetet</h3>
+                    <ul class="tags">
+                        <li class="tag">
+                            <picture>
+                                <img src="./media/icons/calendar.svg" alt="calendar">
+                            </picture>
+                            <span><time datetime="2020">2020</time> - <time datetime="2022">2022</time></span>
+                        </li>
+                        <li class="tag">
+                            <picture>
+                                <img src="./media/icons/location.svg" alt="location pin">
+                            </picture>
+                            <div>
+                                <address>Sundsvall</address> & <address>Uppsala</address>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>Min utbildning på universitetet har givit mig goda kunskaper inom många olika webbtekniker som
+                        HTML, CSS, JavaScript, webbanvändbarhet, PHP, SQL samt lite C# ASP.Net Core.
+                        Under utbildningens gång har jag utvecklat ett stort intresse för
+                        TypeScript och jag har även aktivt börjat följa utvecklingen av olika webbstandarder.
+                    </p>
                 </section>
+                <section class="section">
+                    <h2>Arbetslivserfarenhet</h2>
+                    <hr>
+                    <h3>Fullstack mjukvaruutvecklare Issuefab</h3>
+                    <ul class="tags">
+                        <li class="tag">
+                            <picture>
+                                <img src="./media/icons/calendar.svg" alt="calendar">
+                            </picture>
+                            <span><time datetime="2022">2022</time> - <span>nuvarande</span></span>
+                        </li>
+                        <li class="tag">
+                            <picture>
+                                <img src="./media/icons/location.svg" alt="location pin">
+                            </picture>
+                            <div>
+                                <address>Uppsala</address>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>Under min tid på Issuefab har jag arbetat med följande projekt:</p>
+                    <ul>
+                        <li>
+                            Ett användarhanteringssystem som startades av Issuefab men som idag är ett samarbete mellan
+                            ett annat företag där jag är huvudutvecklare. </li>
+                        <li>
+                            Ett tidsrapporteringssystem där jag ansvarar för utveckling och CI/CD av hela
+                            applikationen.
+                        </li>
+                        <li>
+                            Applikationen som är Issuefabs egna affärsidé där jag ansvarar för stora delar av
+                            applikationens utveckling och CI/CD.
+                        </li>
+                        <li>
+                            Konsultupdrag till Paxport SE där jag hjälpte ett av Paxports utvecklingsteams med att
+                            integrera mot deras interna backendsystem för deras kundkorg samt nyutveckling av ett
+                            sätesplaceringssystem.
+                        </li>
+                    </ul>
+                    <hr>
+                    <h3>Personlig assistent Särnmark Assistans</h3>
+                    <ul class="tags">
+                        <li class="tag">
+                            <picture>
+                                <img src="./media/icons/calendar.svg" alt="calendar">
+                            </picture>
+                            <span><time datetime="2015">2015</time> - <time datetime="2022">2022</time></span>
+                        </li>
+                        <li class="tag">
+                            <picture>
+                                <img src="./media/icons/location.svg" alt="location pin">
+                            </picture>
+                            <div>
+                                <address>Uppsala</address> & <address>Knivsta</address>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>Under min tid på Särnmark jobbade jag med två olika funktionvarierade personer och hjälpte dom
+                        att ta sig igenom deras försvårade vardag.</p>
+                </section>
+                <aside class="sidebar">
+                    <section>
+                        <h2>Platformar</h2>
+                        <hr>
+                        <ul>
+                            <li>Linux</li>
+                            <li>Windows + WSL</li>
+                            <li>Cloudflare workers</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Språk</h2>
+                        <hr>
+                        <ul>
+                            <li>TypeScript / JavaScript</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Svenska</li>
+                            <li>Engelska</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Ramverk</h2>
+                        <hr>
+                        <ul>
+                            <li>Stencil.js</li>
+                            <li>React</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Referenser</h2>
+                        <hr>
+                        <p>Referenser lämnas på begäran.</p>
+                    </section>
+
+                </aside>
             </main>
         </div>
-        <footer>
-
+        <footer class="page-footer">
         </footer>
     </div>
 </body>
