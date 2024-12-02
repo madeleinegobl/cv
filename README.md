@@ -1,2 +1,2 @@
-# cv
-My CV
+# CV
+https://eliaseriksson.io/cv/
