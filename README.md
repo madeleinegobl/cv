@@ -1,2 +1,3 @@
 # CV
-https://eliaseriksson.io/cv/
+[se](https://eliaseriksson.io/cv/)
+[en](https://eliaseriksson.io/cv/)
