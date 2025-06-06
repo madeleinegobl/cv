@@ -30,10 +30,10 @@ hr + section > :is(h1, h2, h3, h4, h5, h6) {
   margin-bottom: 0.5em;
 }
 
-section>h3:has(+ h4) {
+section > h3:has(+ h4) {
   margin-bottom: 0;
 }
-section>h3+h4 {
+section > h3 + h4 {
   margin-top: 0;
 }
 
@@ -179,6 +179,47 @@ a {
 
 .section > :last-child {
   margin-bottom: 0;
+}
+
+.graded {
+  list-style-type: none;
+  padding-left: 0;
+}
+.graded > li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.graded
+  > :is(.grade-0, .grade-1, .grade-2, .grade-3, .grade-4, .grade-5)
+  > .scale {
+  display: flex;
+  gap: 0.2em;
+}
+.graded
+  > :is(.grade-0, .grade-1, .grade-2, .grade-3, .grade-4, .grade-5)
+  > .scale
+  > div {
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  border: 1px solid black;
+}
+
+.graded .grade-1 .scale > div:nth-child(-n + 1) {
+  background-color: black;
+}
+.graded .grade-2 .scale > div:nth-child(-n + 2) {
+  background-color: black;
+}
+.graded .grade-3 .scale > div:nth-child(-n + 3) {
+  background-color: black;
+}
+.graded .grade-4 .scale > div:nth-child(-n + 4) {
+  background-color: black;
+}
+.graded .grade-5 .scale > div:nth-child(-n + 5) {
+  background-color: black;
 }
 
 /* footer */
