@@ -188,38 +188,54 @@ a {
 .graded > li {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .graded
   > :is(.grade-0, .grade-1, .grade-2, .grade-3, .grade-4, .grade-5)
   > .scale {
   display: flex;
-  gap: 0.2em;
 }
 .graded
   > :is(.grade-0, .grade-1, .grade-2, .grade-3, .grade-4, .grade-5)
   > .scale
   > div {
-  width: 1em;
-  height: 1em;
-  border-radius: 0.5em;
-  border: 1px solid black;
+  --size: 0.8em;
+  /* width: calc(var(--size) * var(--line-height)); */
+  aspect-ratio: 1 / 1;
+  height: calc(var(--size) * var(--line-height));
 }
 
 .graded .grade-1 .scale > div:nth-child(-n + 1) {
-  background-color: black;
+  background-image: url("../media/icons/circle-filled.svg");
 }
+.graded .grade-1 .scale > div:nth-child(n + 2) {
+  background-image: url("../media/icons/circle-outline.svg");
+}
+
 .graded .grade-2 .scale > div:nth-child(-n + 2) {
-  background-color: black;
+  background-image: url("../media/icons/circle-filled.svg");
 }
+.graded .grade-2 .scale > div:nth-child(n + 3) {
+  background-image: url("../media/icons/circle-outline.svg");
+}
+
 .graded .grade-3 .scale > div:nth-child(-n + 3) {
-  background-color: black;
+  background-image: url("../media/icons/circle-filled.svg");
 }
+.graded .grade-3 .scale > div:nth-child(n + 4) {
+  background-image: url("../media/icons/circle-outline.svg");
+}
+
 .graded .grade-4 .scale > div:nth-child(-n + 4) {
-  background-color: black;
+  background-image: url("../media/icons/circle-filled.svg");
 }
+.graded .grade-4 .scale > div:nth-child(n + 5) {
+  background-image: url("../media/icons/circle-outline.svg");
+}
+
 .graded .grade-5 .scale > div:nth-child(-n + 5) {
-  background-color: black;
+  background-image: url("../media/icons/circle-filled.svg");
 }
 
 /* footer */
