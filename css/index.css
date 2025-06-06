@@ -20,10 +20,21 @@ ul {
   margin-bottom: 0;
 }
 
+:is(h1, h2, h3, h4, h5, h6).no-bold {
+  font-weight: normal;
+}
+
 hr + :is(h1, h2, h3, h4, h5, h6),
 hr + section > :is(h1, h2, h3, h4, h5, h6) {
   margin-top: 0.25em;
   margin-bottom: 0.5em;
+}
+
+section>h3:has(+ h4) {
+  margin-bottom: 0;
+}
+section>h3+h4 {
+  margin-top: 0;
 }
 
 picture,
@@ -118,7 +129,7 @@ a {
 
 .header-picture {
   margin: auto;
-  --size: 12em;
+  --size: 10em;
   max-width: var(--size);
   max-height: var(--size);
   width: 100%;
